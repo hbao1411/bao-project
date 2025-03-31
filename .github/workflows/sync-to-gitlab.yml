@@ -17,4 +17,5 @@ jobs:
       - name: Push to GitLab
         run: |
           git remote add gitlab https://oauth2:${{ secrets.GITLAB_ACCESS_TOKEN }}@gitlab.com/hbao1411/bao-project.git
-          git push --mirror gitlab
+          git push gitlab --all  # Chỉ push tất cả các branch (không đẩy các hidden refs)
+          git push gitlab --tags # Nếu bạn muốn đẩy tags nữa
