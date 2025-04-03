@@ -55,7 +55,7 @@ async fn func(event: LambdaEvent<Payload>) -> Result<Value, Error> {
         status: 400,
         headers: json!({ "Content-Type": "application/json" }),
         body: json!(Msg {
-            msg: "bad request from client".to_string(),
+            msg: "bad request from client, please try another name".to_string(),
         })
         .to_string(),
     };
