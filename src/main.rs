@@ -49,7 +49,7 @@ async fn func(event: LambdaEvent<Payload>) -> Result<Value, Error> {
 
         return Ok(resp);
     }
-    // add new comment for test Jenkins 2 - tEST ver 4
+    // build jenkins success
     let resp = Response {
         status: 400,
         headers: json!({ "Content-Type": "application/json" }),
