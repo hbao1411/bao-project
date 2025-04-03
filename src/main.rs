@@ -50,6 +50,7 @@ async fn func(event: LambdaEvent<Payload>) -> Result<Value, Error> {
         return Ok(resp);
     }
     // build jenkins success
+    // Note build jenkins thành công
     let resp = Response {
         status: 400,
         headers: json!({ "Content-Type": "application/json" }),
